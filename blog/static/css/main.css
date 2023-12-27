@@ -1,5 +1,5 @@
 .contenedor{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(130, 79, 79);
     
 }
 * {
@@ -10,7 +10,10 @@ card {
     text-align: center;
 }
 
-
+body {
+    background-color: #d3d3d3; 
+  }
+  
 .form{
 
     position: relative;
@@ -21,7 +24,7 @@ card {
     position: absolute;
     top:20px;
     left: 20px;
-    color: #9ca3af;
+    color: #bf1f1f;
 
 }
 
@@ -31,7 +34,7 @@ card {
     right: 17px;
     top: 13px;
     padding: 2px;
-    border-left: 1px solid #d1dbd1;
+    border-left: 1px solid #7b7b7b;
 
 }
 
@@ -60,3 +63,15 @@ card {
 #icono-izquierda {
     text-align: left;
 }
+
+.color {color:rgb(0, 0, 0); }
+.instagram-link {color:rgb(255, 0, 102); }
+
+.square-item {
+    /* Para que cada elemento ocupe solo el espacio que necesita */
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+    border: 2px solid rgb(255, 0, 13); /* Define el borde y su color */
+    border-radius: 1%; /* Ajusta el radio del borde para que sea un 2% más grande */
+    margin: 12px; /* Espacio entre los elementos */
+}
+

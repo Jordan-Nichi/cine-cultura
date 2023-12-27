@@ -12,9 +12,9 @@
         <h3 class="fst-italic">Categorias</h3>
         <ol class="list-unstyled mb-0">
 
-            <li><a href="{% url 'noticias:inicio' %}"> Todas</a></li>
+            <li><a href="{% url 'noticias:inicio' %}" style="color: #ff0000;"> Todas</a></li>
             <li>{% for c in categorias %}
-                <a href="?id={{c.pk}}">{{c.nombre}}</a>
+                <a href="?id={{c.pk}}" style="color: #ff0000;">{{c.nombre}}</a>
                 {% endfor %}
             </li>
         </ol>
@@ -53,13 +53,13 @@
 
 <hr>
 
-<a href="{% url 'noticias:inicio' %}?fecha=asc ">Más antiguas</a>
+<a href="{% url 'noticias:inicio' %}?fecha=asc " style="color: #ff0000;">Más antiguas</a>
 
-<a href="{% url 'noticias:inicio' %}?fecha=des ">Más actuales</a>
+<a href="{% url 'noticias:inicio' %}?fecha=des " style="color: #ff0000;">Más actuales</a>
 
-<a href="{% url 'noticias:inicio' %}?orden=asc ">De A a Z</a>
+<a href="{% url 'noticias:inicio' %}?orden=asc " style="color: #ff0000;">De A a Z</a>
 
-<a href="{% url 'noticias:inicio' %}?orden=des ">De Z a A</a>
+<a href="{% url 'noticias:inicio' %}?orden=des " style="color: #ff0000;">De Z a A</a>
 
 <hr>
 
@@ -74,7 +74,7 @@
                     <div class="mb-1 text-body-secondary">{{noticia.fecha}}</div>
                     <p class="card-text mb-auto">{{ noticia.cuerpo|slice:250 }}...</p>
                     <a href="{% url 'noticias:detalle' noticia.pk %}"
-                        class="icon-link gap-1 icon-link-hover stretched-link">
+                        class="icon-link gap-1 icon-link-hover stretched-link" style="color: #ffffff;" >
                         Seguir leyendo...
                         <svg class="bi">
                             <use xlink:href="#chevron-right"></use>
@@ -100,7 +100,7 @@
 <!-- boton de subida -->
 <hr>
 
-  <button  id="btnVolverArriba" width="52" height="52" class="btn btn-primary" >Volver arriba</button>
+  <button  id="btnVolverArriba" width="52" height="52" class="btn btn-primary" style="color: #ffffff;" > Volver arriba</button>
 
   <script>
     // Obtener el botón y el evento scroll
